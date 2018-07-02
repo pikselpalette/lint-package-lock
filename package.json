@@ -5,8 +5,14 @@
   "main": "index.js",
   "author": "Sam Boylett <sam.boylett@piksel.com>",
   "license": "Apache-2.0",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "args-parser": "^1.1.0",
     "glob": "^7.1.2"
+  },
+  "devDependencies": {
+    "jest": "^23.2.0"
   }
 }
