@@ -1,6 +1,7 @@
 # Lint Package Lock
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![npm version](https://badge.fury.io/js/lint-package-lock.svg)](https://badge.fury.io/js/lint-package-lock)
 
 This is a tool to keep your package-lock sane when working with multiple devs who may be using different npm versions or `.npmrc` files.
 
