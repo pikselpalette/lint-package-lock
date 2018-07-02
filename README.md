@@ -20,7 +20,7 @@ Add it to your packages scripts to use it:
 ```JSON
 {
   "scripts": {
-    "lint:package-lock": "node node_modules/lint-package-lock"
+    "lint:package-lock": "lint-package-lock"
   }
 }
 ```
