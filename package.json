@@ -8,6 +8,10 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pikselpalette/lint-package-lock"
+  },
   "dependencies": {
     "args-parser": "^1.1.0",
     "glob": "^7.1.2"
