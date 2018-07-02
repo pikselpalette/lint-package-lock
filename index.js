@@ -10,7 +10,7 @@ const file = args.file || path.join(process.cwd(), 'package-lock.json');
 const configFile = path.join(process.cwd(), args.config || '.lint-package-lock');
 
 const config = fs.existsSync(configFile)
-  ? fs.readFileSync(configFile).toString()
+  ? JSON.parse(fs.readFileSync(configFile).toString())
   : {};
 
 const lock = JSON.parse(fs.readFileSync(file).toString());

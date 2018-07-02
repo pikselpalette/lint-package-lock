@@ -2,7 +2,13 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This is a small tool to help keep your package-lock sane when working with other devs who may be using different npm versions or config.
+This is a tool to keep your package-lock sane when working with multiple devs who may be using different npm versions or `.npmrc` files.
+
+## Installation
+
+```
+npm i --save-dev lint-package-lock
+```
 
 ## Usage
 
@@ -31,3 +37,13 @@ Enforces the resolves server to use, defaults to `https://registry.npmjs.org`
   "server": "https://your-private-registry.internal"
 }
 ```
+
+## Arguments
+
+### --file=package-lock.json
+
+Sets the file to lint, defaults to `package-lock.json` in the current working directory.
+
+### --config=.lint-package-lock
+
+Sets the config file, defaults to `.lint-package-lock` in the current working directory.
