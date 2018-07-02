@@ -22,7 +22,7 @@ let failed = false;
 console.log(`Running package-lock linting on ${file}`);
 
 const enforceResolves = (modules) =>
-  Object.entries(modules).forEach(([name, module]) => {
+  Object.entries(modules || {}).forEach(([name, module]) => {
     rules.forEach((rule) => {
       const error = rule(config, name, module);
 
@@ -39,6 +39,9 @@ const enforceResolves = (modules) =>
   });
 
 enforceResolves(lock.dependencies);
+enforceResolves(lock.devDependencies);
+enforceResolves(lock.peerDependencies);
+enforceResolves(lock.optionalDependencies);
 
 if (failed) {
   console.error('Failed');
